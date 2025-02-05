@@ -24,7 +24,7 @@ export function Header() {
             <img
               alt="Logo"
               src={Logo}
-              className="h-[4.5rem] sm:h-12 w-auto"
+              className="xl:h-[4.5rem] sm:h-12 w-auto"
             />
           </a>
         </div>
