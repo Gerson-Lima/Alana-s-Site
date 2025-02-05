@@ -1,0 +1,13 @@
+.hero-bg {
+    background: 
+      url('../../assets/bg-hero.png') right center / contain no-repeat, 
+      linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
+  }
+  
+  @media (max-width: 389px) {
+    .hero-bg {
+      background: 
+        url('../../assets/bg-hero.png') right center / cover no-repeat, 
+        linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
+    }
+  }

@@ -1,0 +1,36 @@
+/* Adiciona uma linha embaixo do link ao passar o mouse */
+:root {
+    --primary-color: #F3E7D9; 
+    --secondary-color: #663535; 
+  }
+
+.navlinks a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px; 
+  }
+  
+  .navlinks a:hover {
+    font-weight: 600; 
+    color: #202020; 
+    text-shadow: 0.01px -0.01px 0 #202020, -0.01px 0.01px 0 #202020; 
+  }
+  
+  .navlinks a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 1.5px; 
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .navlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
