@@ -1,14 +1,12 @@
-/* eslint-disable no-unused-vars */
-import { useState } from 'react'
-import { Header } from './Components/Header/Header'
-import { Hero } from './Components/Hero/Hero'
+import { Home }  from './pages/Home'
 
 export default function App() {
   
   return (
     <div> 
-      
-      <Hero/>
+
+      <Home/>
+
     </div>
   )
 }
