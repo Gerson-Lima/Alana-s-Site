@@ -1,13 +1,12 @@
-import React from "react";
+// import React from "react";
 import imgHero from "../../../assets/img-hero.png";
-import bgHero from "../../../assets/bg-hero.png";
 import "./Hero.css";
 
 export function Hero() {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center px-4 pt-20 lg:pt-32 sm:pt-32 hero-bg">
       {/* Container para alinhar com o header */}
-        <div className="mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8 w-full lg:max-w-7xl sm:px-7">
+        <div className="mx-auto flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8 w-full max-w-7xl px-0 sm:px-7 xl:px-0">
             {/* Texto à esquerda */}
             <div className="text-left max-w-xl pb-16">
             <h1 className="lg:text-4xl sm:text-[18px] md:text-[40px] 2sm:text-[34px] font-primary font-extrabold text-gray-800 mb-3 flex flex-col">

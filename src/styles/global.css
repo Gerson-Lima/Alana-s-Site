@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+    @apply font-primary;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
