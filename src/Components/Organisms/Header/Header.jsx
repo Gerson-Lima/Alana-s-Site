@@ -72,7 +72,7 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
-              <XMarkIcon aria-hidden="true" className="size-6" />
+              <XMarkIcon aria-hidden="true" className="size-6 mr-5" />
             </button>
           </div>
           <div className="mt-6 flow-root font-primary">
