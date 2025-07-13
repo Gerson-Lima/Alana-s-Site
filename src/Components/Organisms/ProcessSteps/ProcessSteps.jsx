@@ -1,4 +1,4 @@
-import Steps from '../../Molecules/steps/steps';
+import Steps from '../../Molecules/Steps/steps';
 import { Icon1, Icon2, Icon3, Icon4 } from '../../Atoms/Icons/Icons';
 
 
