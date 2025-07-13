@@ -16,8 +16,8 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-24 sm:inset-x-0 top-0 z-50 md:max-w-7xl mx-auto">
-      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+    <header className="absolute inset-x-24 sm:inset-x-0 top-0 z-50 max-w-7xl mx-auto">
+      <nav aria-label="Global" className="flex items-center justify-between p-6 xl:px-0 sm:px-11">
 
         {/* LOGO */}
         <div className="flex md:flex-1">
