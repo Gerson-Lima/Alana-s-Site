@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import { ImageModal } from '../../Molecules/ImageModal/ImageModal';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import './Gallery.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export function Gallery() {
   const images = [
@@ -25,9 +30,10 @@ export function Gallery() {
   };
 
   return (
-    <section className="py-8">
-      <div className="hidden md:grid grid-cols-7 grid-rows-1 gap-4 px-4 max-h-[600px]">
-        {/* Coluna 1 grande (imagem 1) */}
+    <section className="md:py-8 sm:py-0">
+      
+      {/* DESKTOP GRID */}
+      <div className="hidden md:grid grid-cols-7 grid-rows-1 gap-4 px-4 max-h-[600px] overflow-hidden">
         <button
           type="button"
           className="col-span-1 row-span-2 focus:outline-none"
@@ -36,11 +42,9 @@ export function Gallery() {
           <img
             src={images[0]}
             alt="Imagem 1"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
-
-        {/* Coluna 2 grande (imagem 2) */}
         <button
           type="button"
           className="col-span-3 row-span-2 focus:outline-none"
@@ -49,11 +53,9 @@ export function Gallery() {
           <img
             src={images[1]}
             alt="Imagem 2"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
-
-        {/* Topo direito (3, 5) */}
         <button
           type="button"
           className="col-span-1 row-span-1 focus:outline-none"
@@ -62,7 +64,7 @@ export function Gallery() {
           <img
             src={images[2]}
             alt="Imagem 3"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
         <button
@@ -73,11 +75,9 @@ export function Gallery() {
           <img
             src={images[4]}
             alt="Imagem 5"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
-
-        {/* Base direita (4, 6, 7) */}
         <button
           type="button"
           className="col-span-1 row-span-1 focus:outline-none"
@@ -86,7 +86,7 @@ export function Gallery() {
           <img
             src={images[3]}
             alt="Imagem 4"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
         <button
@@ -97,7 +97,7 @@ export function Gallery() {
           <img
             src={images[5]}
             alt="Imagem 6"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
         <button
@@ -108,27 +108,37 @@ export function Gallery() {
           <img
             src={images[6]}
             alt="Imagem 7"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover w-full h-full shadow-md hover:opacity-80 transition rounded"
           />
         </button>
       </div>
 
-      {/* MOBILE STACK */}
-      <div className="md:hidden flex flex-col gap-4 px-4">
-        {images.map((src, idx) => (
-          <button
-            key={idx}
-            type="button"
-            className="focus:outline-none"
-            onClick={() => handleOpenModal(idx)}
-          >
-            <img
-              src={src}
-              alt={`Imagem ${idx + 1}`}
-              className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
-            />
-          </button>
-        ))}
+      {/* MOBILE SWIPER */}
+      <div className="md:hidden px-4">
+        <Swiper
+          loop={true}
+          spaceBetween={16}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {images.map((src, idx) => (
+            <SwiperSlide key={idx}>
+              <button
+                type="button"
+                className="focus:outline-none w-full"
+                onClick={() => handleOpenModal(idx)}
+              >
+                <img
+                  src={src}
+                  alt={`Imagem ${idx + 1}`}
+                  className="object-cover w-full h-64 rounded shadow-md hover:opacity-80 transition"
+                />
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {isOpen && (
