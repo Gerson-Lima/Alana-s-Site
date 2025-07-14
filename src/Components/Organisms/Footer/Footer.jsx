@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="font-primary">
       {/* TOPO DO FOOTER */}
-      <div className="px-6 py-12 lg:px-24 footer-bg">
+      <div className="px-6 py-8 lg:px-24 footer-bg">
         <div className="max-w-7xl mx-auto grid gap-8 lg:gap-28 md:grid-cols-1 lg:grid-cols-4">
 
           {/* LOGO E NOME */}
@@ -27,7 +27,7 @@ export function Footer() {
           {/* NAVEGAÇÃO */}
           <div className="text-center md:text-center lg:text-left">
             <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Navegação</h3>
-            <ul className="grid grid-cols-1 gap-4">
+            <ul className="grid grid-cols-1 gap-2">
               <li><a href="#home" className="nav-link font-semibold">Início</a></li>
               <li><a href="#projects" className="nav-link font-semibold">Projetos</a></li>
               <li><a href="#about" className="nav-link font-semibold">Sobre mim</a></li>
