@@ -7,7 +7,7 @@ export function ContactSection() {
 
         {/* LADO ESQUERDO */}
         <div className="flex flex-col justify-center">
-          <div className="max-w-md w-full px-4 lg:px-6 space-y-6">
+          <div className="max-w-md w-full space-y-6">
             <h2 className="text-4xl font-bold text-[#663535] uppercase">Contato</h2>
             <p className="text-3xl font-medium text-[#202020]">
               Transforme seus espaços com a gente! Entre em contato e faça seu projeto ganhar vida.

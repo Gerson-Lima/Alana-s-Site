@@ -7,10 +7,10 @@ export function Footer() {
     <footer className="font-primary">
       {/* TOPO DO FOOTER */}
       <div className="px-6 py-12 lg:px-24 footer-bg">
-        <div className="max-w-7xl mx-auto grid gap-8 md:gap-28 md:grid-cols-2 lg:grid-cols-4">
+        <div className="max-w-7xl mx-auto grid gap-8 lg:gap-28 md:grid-cols-1 lg:grid-cols-4">
 
           {/* LOGO E NOME */}
-          <div className="flex justify-center md:justify-start items-center">
+          <div className="flex justify-center md:justify-center items-center">
             <a href="#home">
               <img
                 alt="Logo"
@@ -25,7 +25,7 @@ export function Footer() {
           </div>
 
           {/* NAVEGAÇÃO */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-center lg:text-left">
             <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Navegação</h3>
             <ul className="grid grid-cols-1 gap-4">
               <li><a href="#home" className="nav-link font-semibold">Início</a></li>
@@ -37,7 +37,7 @@ export function Footer() {
           </div>
 
           {/* CONTATOS */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-center lg:text-left">
             <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Contatos</h3>
             <ul className="space-y-2">
               <li>
@@ -59,13 +59,13 @@ export function Footer() {
           </div>
 
           {/* REDES SOCIAIS */}
-          <div className="flex flex-col items-center md:items-end text-center md:text-right">
+          <div className="flex flex-col items-center lg:items-end md:items-center text-center lg:text-right">
             <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Redes Sociais</h3>
             <div className="flex space-x-4">
               <a href="https://wa.me/5583998219493" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
                 <FaWhatsapp size={24} />
               </a>
-              <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
+              <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon lg:!mr-[3.9rem] md:mr-0 text-[#663535] hover:text-[#4d2727] transition-colors">
                 <FaInstagram size={24} />
               </a>
             </div>
