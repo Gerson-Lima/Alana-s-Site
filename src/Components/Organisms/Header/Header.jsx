@@ -88,7 +88,7 @@ export function Header() {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#home" className="-m-1.5 p-1.5">
               <img
                 alt="Logo"
                 src={Logo}
@@ -110,6 +110,7 @@ export function Header() {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-secondary hover:bg-primary"
                   >
                     {item.name}
