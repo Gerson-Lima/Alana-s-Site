@@ -5,11 +5,11 @@ import Logo from '../../../assets/Logo.svg'
 import './Header.css';
 
 const navigation = [
-  { name: 'Início', href: '/' },
-  { name: 'Projetos', href: '#projetos' },
-  { name: 'Sobre mim', href: '#sobre' },
-  { name: 'Como funciona', href: '#etapas' },
-  { name: 'Contato', href: '#contato' },
+  { name: 'Início', href: '#home' },
+  { name: 'Projetos', href: '#projects' },
+  { name: 'Sobre mim', href: '#about' },
+  { name: 'Como funciona', href: '#steps' },
+  { name: 'Contato', href: '#contact' },
 ]
 
 export function Header() {
@@ -38,12 +38,12 @@ export function Header() {
     >
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 xl:px-24 sm:px-11 max-w-7xl mx-auto"
+        className="flex items-center justify-between p-6 xl:px-0 sm:px-11 max-w-7xl mx-auto"
       >
 
         {/* LOGO */}
         <div className="flex md:flex-1">
-          <a href="#">
+          <a href="#home">
             <img
               alt="Logo"
               src={Logo}

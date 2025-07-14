@@ -4,7 +4,7 @@ import "./Hero.css";
 
 export function Hero() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-center px-4 pt-20 lg:pt-32 sm:pt-32 hero-bg">
+    <section className="flex flex-col lg:flex-row items-center justify-center px-4 pt-20 lg:pt-32 sm:pt-32 hero-bg" id="home">
       {/* Container para alinhar com o header */}
         <div className="mx-auto flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8 w-full max-w-7xl px-0 sm:px-7 xl:px-0">
             {/* Texto à esquerda */}
@@ -26,13 +26,13 @@ export function Hero() {
                 ao seu novo ambiente!
             </p>
             <a
-                href="#services"
+                href="#contact"
                 className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
             >
                 Tire suas dúvidas{" "}
                 <span
                 className="pl-2"
-                style={{ position: "relative", top: "3.1px" }}
+                style={{ position: "relative", top: "2px" }}
                 >
                 {" "}
                 &gt;{" "}
