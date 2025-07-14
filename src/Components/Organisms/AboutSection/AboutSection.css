@@ -1,0 +1,9 @@
+.about-bg {
+  background: linear-gradient(to bottom right, #DAD0C7 0%, #F3E7D9 59%, #DAD0C7 100%) !important;
+}
+
+@media (max-width: 389px) {
+  .about-bg {
+    background: linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%, #F3E7D9 100%) !important;
+  }
+}

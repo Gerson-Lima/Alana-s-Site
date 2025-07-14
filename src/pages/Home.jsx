@@ -4,6 +4,7 @@ import { ProcessSteps } from '../Components/Organisms/ProcessSteps/ProcessSteps'
 import { Gallery } from '../Components/Organisms/Gallery/Gallery'
 import { ContactSection } from '../Components/Organisms/Contact/ContactSection'
 import { Footer } from '../Components/Organisms/Footer/Footer'
+import { AboutSection } from '../Components/Organisms/AboutSection/AboutSection'
 
 
 export function Home() {
@@ -15,6 +16,7 @@ export function Home() {
         < Hero /> 
         < ProcessSteps />
         < Gallery />
+        < AboutSection />
         < ContactSection />
         < Footer />
         
