@@ -9,12 +9,12 @@ import 'swiper/css';
 export function Gallery() {
   const images = [
     '/1.png',
-    '/Rectangle73.png',
+    '/2.png',
     '/3.png',
-    '/5.png',
     '/4.png',
-    '/8.png',
-    '/9.png',
+    '/5.png',
+    '/6.png',
+    '/7.png',
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export function Gallery() {
   };
 
   return (
-    <section className="md:py-8 sm:py-0">
+    <section className="md:py-8 sm:py-0" id="projetos">
       
       {/* DESKTOP GRID */}
       <div className="hidden md:grid grid-cols-7 grid-rows-1 gap-4 px-4 max-h-[600px] xl:max-h-[1200px] overflow-hidden">

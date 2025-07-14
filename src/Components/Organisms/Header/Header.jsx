@@ -1,23 +1,45 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../../assets/Logo.svg'
 import './Header.css';
 
 const navigation = [
-  { name: 'Início', href: '#' },
-  { name: 'Projetos', href: '#' },
-  { name: 'Sobre mim', href: '#' },
-  { name: 'Serviços', href: '#' },
-  { name: 'Contato', href: '#' },
+  { name: 'Início', href: '/' },
+  { name: 'Projetos', href: '#projetos' },
+  { name: 'Sobre mim', href: '#sobre' },
+  { name: 'Como funciona', href: '#etapas' },
+  { name: 'Contato', href: '#contato' },
 ]
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="absolute inset-x-24 sm:inset-x-0 top-0 z-50 max-w-7xl mx-auto">
-      <nav aria-label="Global" className="flex items-center justify-between p-6 xl:px-0 sm:px-11">
+    <header
+      className={`
+        fixed inset-x-0 top-0 z-50 transition-colors duration-300
+        ${scrolled ? 'bg-white shadow' : 'bg-transparent'}
+      `}
+    >
+      <nav
+        aria-label="Global"
+        className="flex items-center justify-between p-6 xl:px-24 sm:px-11 max-w-7xl mx-auto"
+      >
 
         {/* LOGO */}
         <div className="flex md:flex-1">
@@ -28,7 +50,7 @@ export function Header() {
               className="xl:h-[4.5rem] sm:h-12 w-auto"
               style={{
                 imageRendering: '-webkit-optimize-contrast',
-                transform: 'translateZ(0)', // Força re-renderização
+                transform: 'translateZ(0)',
               }}
             />
           </a>
@@ -45,10 +67,16 @@ export function Header() {
           </button>
         </div>
 
-        {/* ITENS MENU */}
+        {/* ITENS MENU DESKTOP */}
         <div className="hidden navlinks lg:flex lg:gap-x-12 uppercase font-primary">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-lg font-semibold text-gray-900">
+            <a
+              key={item.name}
+              href={item.href}
+              className={`text-lg font-semibold transition-colors duration-300 ${
+                scrolled ? 'text-gray-900' : 'text-[#202020]'
+              }`}
+            >
               {item.name}
             </a>
           ))}
