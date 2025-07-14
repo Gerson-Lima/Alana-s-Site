@@ -4,10 +4,26 @@
       linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
   }
   
-  @media (max-width: 389px) {
+  @media (max-width: 2560px) {
     .hero-bg {
       background: 
-        url('../../../assets/bg-hero.png') right center / cover no-repeat, 
+        url('../../../assets/bg-hero.png') right center / 30% 100% no-repeat, 
+        linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
+    }
+  }
+
+  @media (max-width: 1920px) {
+    .hero-bg {
+      background: 
+        url('../../../assets/bg-hero.png') right center / 22% 100% no-repeat, 
+        linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-bg {
+      background: 
+        url('../../../assets/bg-hero.png') right center / 65% 100% no-repeat, 
         linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%) !important;
     }
   }
