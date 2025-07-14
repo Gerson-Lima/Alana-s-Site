@@ -1,0 +1,79 @@
+.footer-bg {
+  background: linear-gradient(to bottom right, #DAD0C7 0%, #F3E7D9 59%, #DAD0C7 100%) !important;
+}
+
+@media (max-width: 389px) {
+  .footer-bg {
+    background: linear-gradient(to bottom, #DAD0C7 0%, #F3E7D9 59%, #F3E7D9 100%) !important;
+  }
+}
+
+.social-icon {
+  color: #663535;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  color: #663535;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #663535;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #663535;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.contact-link {
+  position: relative;
+  display: inline-block;
+  color: #663535;
+  font-weight: 600;
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #663535;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #663535;
+}
+
+.contact-link:hover::after {
+  transform: scaleX(1);
+}

@@ -4,7 +4,7 @@ import { Icon1, Icon2, Icon3, Icon4 } from '../../Atoms/Icons/Icons';
 
 export function ProcessSteps() {
   return (
-    <section className="py-12 bg-white scroll-mt-28" id="etapas">
+    <section className="py-12 bg-white scroll-mt-28" id="steps">
       <div className="max-w-7xl mx-auto space-y-7 p-6 xl:px-0 sm:px-11">
         <h1 className="text-4xl font-primary font-extrabold mb-10 text-[#663535]">ETAPAS DO PROCESSO</h1>
 
