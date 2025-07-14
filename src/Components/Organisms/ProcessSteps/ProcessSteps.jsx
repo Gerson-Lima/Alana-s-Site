@@ -1,4 +1,4 @@
-import Steps from '../../Molecules/Steps/steps.jsx';
+import Steps from '../../Molecules/Steps/Steps';
 import { Icon1, Icon2, Icon3, Icon4 } from '../../Atoms/Icons/Icons';
 
 
