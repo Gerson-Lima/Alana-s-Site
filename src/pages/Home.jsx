@@ -5,6 +5,7 @@ import { Gallery } from '../Components/Organisms/Gallery/Gallery'
 import { ContactSection } from '../Components/Organisms/Contact/ContactSection'
 import { Footer } from '../Components/Organisms/Footer/Footer'
 import { AboutSection } from '../Components/Organisms/AboutSection/AboutSection'
+import { FeatureSection } from '../Components/Organisms/AboutSection/FeatureSection'
 
 
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
         < ProcessSteps />
         < Gallery />
         < AboutSection />
+        < FeatureSection />
         < ContactSection />
         < Footer />
         

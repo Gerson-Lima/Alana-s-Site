@@ -1,0 +1,27 @@
+.feature-bg {
+  background: linear-gradient(
+    to top right,
+    #663535 16%,
+    #734444 31%,
+    #734444 41%,
+    #794C4C 56%,
+    #875B5B 73%,
+    #946B6B 87%,
+    #A88383 100%
+  ) !important;
+}
+
+@media (max-width: 389px) {
+  .feature-bg {
+    background: linear-gradient(
+      to bottom,
+      #663535 16%,
+      #734444 31%,
+      #734444 41%,
+      #794C4C 56%,
+      #875B5B 73%,
+      #946B6B 87%,
+      #A88383 100%
+    ) !important;
+  }
+}
