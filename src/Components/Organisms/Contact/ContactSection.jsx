@@ -68,7 +68,7 @@ export function ContactSection() {
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex flex-col">
-                <label className="text-[#663535] mb-1 font-semibold">Nome</label>
+                <label className="text-[#663535] mb-1 font-semibold">Nome<span className='text-xs'>﹡</span></label>
                 <input
                   type="text"
                   name="name"
@@ -78,7 +78,7 @@ export function ContactSection() {
                 />
               </div>
               <div className="flex flex-col">
-                <label className="text-[#663535] mb-1 font-semibold">Sobrenome</label>
+                <label className="text-[#663535] mb-1 font-semibold">Sobrenome<span className='text-xs'>﹡</span></label>
                 <input
                   type="text"
                   name="surname"
@@ -90,7 +90,7 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-[#663535] mb-1 font-semibold">Email</label>
+              <label className="text-[#663535] mb-1 font-semibold">E-mail<span className='text-xs'>﹡</span></label>
               <input
                 type="email"
                 name="email"
@@ -101,7 +101,7 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col">
-              <label className="text-[#663535] mb-1 font-semibold">Mensagem</label>
+              <label className="text-[#663535] mb-1 font-semibold">Mensagem<span className='text-xs'>﹡</span></label>
               <textarea
                 name="message"
                 rows={4}
