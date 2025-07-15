@@ -1,10 +1,23 @@
-import { Home }  from './pages/Home'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { Home } from './pages/Home';
 import { Toaster } from 'react-hot-toast';
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // duração das animações em ms
+      offset: 320,
+      easing: 'ease',
+      once: true,     // anima apenas uma vez
+    });
+  }, []);
+
   return (
-    <div> 
-      <Home/>
+    <div>
+      <Home />
       <Toaster
         position="top-center"
         toastOptions={{
@@ -28,12 +41,12 @@ export default function App() {
               fontWeight: 'bold',
               padding: '10px',
               fontSize: '1.1rem',
-              minWidth: '300px',   // 👈 aumenta largura mínima
-              maxWidth: '600px', 
+              minWidth: '300px',
+              maxWidth: '600px',
             },
           },
         }}
       />
     </div>
-  )
+  );
 }

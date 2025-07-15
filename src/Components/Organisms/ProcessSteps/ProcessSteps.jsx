@@ -6,13 +6,13 @@ export function ProcessSteps() {
   return (
     <section className="py-12 bg-white scroll-mt-28" id="steps">
       <div className="max-w-7xl mx-auto space-y-7 p-6 xl:px-0 sm:px-11">
-        <h1 className="text-4xl font-primary font-extrabold mb-10 text-[#663535]">ETAPAS DO PROCESSO</h1>
+        <h1 className="text-4xl font-primary font-extrabold mb-10 text-[#663535]" data-aos="fade-up" data-aos-delay="200">ETAPAS DO PROCESSO</h1>
 
         <div className="xl:flex">
       
-          <div className="w-[7px] bg-[#E0D7D7] mr-5 md:mr-14 self-stretch"></div>
+          <div className="w-[7px] bg-[#E0D7D7] mr-5 md:mr-14 self-stretch" data-aos="fade-up" data-aos-delay="200"></div>
 
-            <div className="flex flex-wrap gap-10 items-center justify-center">
+            <div className="flex flex-wrap gap-10 items-center justify-center" data-aos="fade-up" data-aos-delay="200">
               <Steps
                 icon={<Icon1 />}
                 title="Reunião de Coleta de Dados"
