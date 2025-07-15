@@ -1,5 +1,5 @@
 // import React from "react";
-import imgHero from "../../../assets/img-hero.png";
+import imgHero from "../../../assets/img-hero.webp";
 import "./Hero.css";
 
 export function Hero() {

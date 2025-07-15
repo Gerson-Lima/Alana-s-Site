@@ -48,7 +48,7 @@ export function AboutSection() {
             {/* COLUNA 2 */}
             <div className="flex justify-center self-end mr-20">
               <img
-                src="/about-me.png"
+                src="/about-me.webp"
                 alt="Alana Martins"
                 className="max-w-sm w-full"
               />
@@ -123,7 +123,7 @@ export function AboutSection() {
           {/* Imagem */}
           <div className="flex justify-center">
             <img
-              src="/about-me.png"
+              src="/about-me.webp"
               alt="Alana Martins"
               className="max-w-sm w-full"
             />
