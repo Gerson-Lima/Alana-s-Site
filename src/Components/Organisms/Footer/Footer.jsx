@@ -4,7 +4,13 @@ import "./Footer.css"
 
 export function Footer() {
   return (
-    <footer className="font-primary" data-aos="fade-up" data-aos-duration="1500">
+    <footer
+      className="font-primary"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-offset="600"
+      data-aos-anchor-placement="top-center"
+    >
       {/* TOPO DO FOOTER */}
       <div className="px-6 py-8 lg:px-24 footer-bg">
         <div className="max-w-7xl mx-auto grid gap-8 lg:gap-28 md:grid-cols-1 lg:grid-cols-4">
