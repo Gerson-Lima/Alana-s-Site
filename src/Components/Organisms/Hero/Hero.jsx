@@ -33,7 +33,7 @@ export function Hero() {
           <div className="lg:w-96 sm:w-52 h-[1.5px] bg-[#202020] mt-4 sm:mt-2" data-aos="fade-up" data-aos-duration="1200"></div>
 
           <p className="xl:text-[24px] sm:text-[16px] text-[#202020] font-primary mb-6 mt-2 leading-tight" data-aos="fade-up" data-aos-duration="1300">
-            Entre em contato e vamos dar vida 
+            Entre em contato e vamos dar vida&nbsp;
             <br className="hidden md:block" /> 
             ao seu novo ambiente!
           </p>
