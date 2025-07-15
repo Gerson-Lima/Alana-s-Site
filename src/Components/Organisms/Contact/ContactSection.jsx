@@ -1,13 +1,15 @@
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
 export function ContactSection() {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -20,10 +22,12 @@ export function ContactSection() {
         () => {
           toast.success('Mensagem enviada com sucesso!');
           form.current.reset();
+          setLoading(false);
         },
         (error) => {
           console.error('Erro ao enviar:', error);
           toast.error('Ocorreu um erro ao enviar. Tente novamente.');
+          setLoading(false);
         }
       );
   };
@@ -109,12 +113,43 @@ export function ContactSection() {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="bg-[#663535] text-white px-6 py-2 font-semibold rounded hover:bg-[#4d2727] transition-colors"
+                disabled={loading}
+                className={`bg-[#663535] text-white px-6 py-2 font-semibold rounded transition-colors flex items-center ${
+                  loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#4d2727]'
+                }`}
               >
-                Enviar
-                <span className="pl-2" style={{ position: "relative", top: "2.5px" }}>
-                  &gt;
-                </span>
+                {loading ? (
+                  <>
+                    <svg
+                      className="animate-spin h-5 w-5 mr-2 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                      ></path>
+                    </svg>
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    Enviar
+                    <span className="pl-2" style={{ position: "relative", top: "2.5px" }}>
+                      &gt;
+                    </span>
+                  </>
+                )}
               </button>
             </div>
           </form>
