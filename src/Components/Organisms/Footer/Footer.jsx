@@ -78,7 +78,7 @@ export function Footer() {
 
           {/* LOGO E NOME */}
           <div className="flex justify-center md:justify-center items-center">
-            <a href="#home">
+            <a href="/">
               <img
                 alt="Logo"
                 src={Logo}

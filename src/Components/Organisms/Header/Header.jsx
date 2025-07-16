@@ -42,7 +42,7 @@ export function Header() {
       >
         {/* LOGO */}
         <div className="flex md:flex-1">
-          <a href="#home">
+          <a href="/">
             <img
               alt="Logo"
               src={Logo}
@@ -110,7 +110,7 @@ export function Header() {
           >
             <DialogPanel className="fixed inset-y-0 right-0 w-3/4 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
-                <a href="#home" className="-m-1.5 p-1.5">
+                <a href="/" className="-m-1.5 p-1.5">
                   <img
                     alt="Logo"
                     src={Logo}

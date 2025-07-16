@@ -8,11 +8,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* Wrapper Global */
 .container {
     max-width: 100%;
     margin-left: auto;
@@ -21,5 +16,16 @@ html {
     padding-right: 8rem;
 }
   
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+@media (max-width: 1024px) {
+    html {
+        scroll-padding-top: 3.5rem;
+    }
+}
+
 
   
