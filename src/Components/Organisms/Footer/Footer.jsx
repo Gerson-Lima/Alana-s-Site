@@ -130,11 +130,11 @@ export function Footer() {
             <div>
               <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Redes Sociais</h3>
               
-              <div className="flex space-x-4">
+               <div className="flex justify-center lg:justify-start space-x-4">
                 <a href="https://wa.me/5583998219493" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
                   <FaWhatsapp size={24} />
                 </a>
-                <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon lg:!mr-[3.9rem] md:mr-0 text-[#663535] hover:text-[#4d2727] transition-colors">
+                <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
                   <FaInstagram size={24} />
                 </a>
               </div>
