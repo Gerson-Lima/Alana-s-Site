@@ -1,7 +1,34 @@
+import { useEffect } from 'react';
 import Logo from '../../../assets/Logo.svg';
 import './AboutSection.css'
 
 export function AboutSection() {
+
+  useEffect(() => {
+    // Função para atualizar o offset
+    const updateAOSOffset = () => {
+      const isMobile = window.innerWidth < 768;
+      const newOffset = isMobile ? 100 : 300;
+
+      const elements = document.querySelectorAll('[data-aos-offset]');
+      elements.forEach((el) => {
+        el.setAttribute('data-aos-offset', newOffset.toString());
+      });
+
+      if (window.AOS && window.AOS.refresh) {
+        window.AOS.refresh();
+      }
+    };
+
+    // Atualiza ao montar
+    updateAOSOffset();
+
+    // Atualiza ao redimensionar
+    window.addEventListener('resize', updateAOSOffset);
+
+    return () => window.removeEventListener('resize', updateAOSOffset);
+  }, []);
+
   return (
     <section className="about-bg scroll-mt-28" id="about">
       <div className="max-w-7xl mx-auto px-6 xl:px-0 sm:mt-16 md:mt-1">
@@ -50,7 +77,7 @@ export function AboutSection() {
                 href="#contact"
                 className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
               >
-                Tire suas dúvidas{" "}
+                Saiba mais{" "}
                 <span className="pl-2" style={{ position: "relative", top: "2px" }}>
                   &gt;
                 </span>
@@ -162,7 +189,7 @@ export function AboutSection() {
             data-aos-offset="300"
             data-aos-anchor-placement="top-center"
           >
-            Tire suas dúvidas{" "}
+            Saiba mais{" "}
             <span className="pl-2" style={{ position: "relative", top: "2px" }}>
               &gt;
             </span>
