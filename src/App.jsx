@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { WhatsAppButton } from './Components/Molecules/WhatsAppBtn/WhatsAppBtn';
 import { Home } from './pages/Home';
 import { Toaster } from 'react-hot-toast';
 
@@ -18,6 +18,7 @@ export default function App() {
   return (
     <div>
       <Home />
+      <WhatsAppButton />
       <Toaster
         position="top-center"
         toastOptions={{

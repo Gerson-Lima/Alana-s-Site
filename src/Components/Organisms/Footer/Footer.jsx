@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { FiChevronUp } from 'react-icons/fi';
 import Logo from '../../../assets/Logo.svg'; 
 import "./Footer.css"
 
@@ -11,7 +12,6 @@ export function Footer() {
     const elements = document.querySelectorAll('footer [data-aos]');
 
     if (isMobile) {
-      // Remove do próprio footer
       if (footer) {
         footer.removeAttribute('data-aos');
         footer.removeAttribute('data-aos-delay');
@@ -20,7 +20,6 @@ export function Footer() {
         footer.removeAttribute('data-aos-anchor-placement');
       }
 
-      // Remove dos filhos
       elements.forEach((el) => {
         el.removeAttribute('data-aos');
         el.removeAttribute('data-aos-delay');
@@ -54,8 +53,6 @@ export function Footer() {
         if (window.AOS && window.AOS.refresh) {
           window.AOS.refresh();
         }
-      } else {
-        // window.location.reload(); // Descomente se quiser recarregar ao voltar para desktop
       }
     };
 
@@ -63,9 +60,13 @@ export function Footer() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer
-      className="font-primary"
+      className="font-primary relative"
       data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-offset="600"
@@ -124,19 +125,35 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* REDES SOCIAIS */}
-          <div className="flex flex-col items-center lg:items-end md:items-center text-center lg:text-right">
-            <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Redes Sociais</h3>
-            <div className="flex space-x-4">
-              <a href="https://wa.me/5583998219493" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
-                <FaWhatsapp size={24} />
-              </a>
-              <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon lg:!mr-[3.9rem] md:mr-0 text-[#663535] hover:text-[#4d2727] transition-colors">
-                <FaInstagram size={24} />
-              </a>
+          {/* REDES SOCIAIS + BOTÃO VOLTAR AO TOPO */}
+          <div className="flex flex-col justify-between items-center lg:items-end md:items-center text-center lg:text-right h-full">
+            <div>
+              <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Redes Sociais</h3>
+              
+              <div className="flex space-x-4">
+                <a href="https://wa.me/5583998219493" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
+                  <FaWhatsapp size={24} />
+                </a>
+                <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon lg:!mr-[3.9rem] md:mr-0 text-[#663535] hover:text-[#4d2727] transition-colors">
+                  <FaInstagram size={24} />
+                </a>
+              </div>
             </div>
-          </div>
 
+            <button
+              onClick={scrollToTop}
+              className="
+                mt-6 flex items-center justify-center
+                bg-[#663535] text-white
+                hover:bg-[#4d2727]
+                transition
+                rounded-md p-3 shadow
+              "
+              aria-label="Voltar ao topo"
+            >
+              <FiChevronUp size={14} />
+            </button>
+          </div>
         </div>
       </div>
 
