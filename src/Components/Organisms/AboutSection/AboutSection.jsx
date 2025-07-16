@@ -5,28 +5,43 @@ import './AboutSection.css'
 export function AboutSection() {
 
   useEffect(() => {
-    // Função para atualizar o offset
-    const updateAOSOffset = () => {
-      const isMobile = window.innerWidth < 768;
-      const newOffset = isMobile ? 100 : 300;
+    const isMobile = window.innerWidth < 768;
+    const elements = document.querySelectorAll('#about [data-aos]');
 
-      const elements = document.querySelectorAll('[data-aos-offset]');
+    if (isMobile) {
       elements.forEach((el) => {
-        el.setAttribute('data-aos-offset', newOffset.toString());
+        el.removeAttribute('data-aos');
+        el.removeAttribute('data-aos-offset');
+        el.removeAttribute('data-aos-duration');
+        el.removeAttribute('data-aos-delay');
+        el.removeAttribute('data-aos-anchor-placement');
       });
 
       if (window.AOS && window.AOS.refresh) {
         window.AOS.refresh();
       }
+    }
+
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      if (mobile) {
+        elements.forEach((el) => {
+          el.removeAttribute('data-aos');
+          el.removeAttribute('data-aos-offset');
+          el.removeAttribute('data-aos-duration');
+          el.removeAttribute('data-aos-delay');
+          el.removeAttribute('data-aos-anchor-placement');
+        });
+        if (window.AOS && window.AOS.refresh) {
+          window.AOS.refresh();
+        }
+      } else {
+        // window.location.reload();
+      }
     };
 
-    // Atualiza ao montar
-    updateAOSOffset();
-
-    // Atualiza ao redimensionar
-    window.addEventListener('resize', updateAOSOffset);
-
-    return () => window.removeEventListener('resize', updateAOSOffset);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -52,7 +67,7 @@ export function AboutSection() {
               className="flex flex-col items-start justify-center"
               data-aos="fade-up"
               data-aos-duration="1500"
-              data-aos-offset="750"
+              data-aos-offset="800"
               data-aos-anchor-placement="top-center"
             >
               <a className="mb-4 self-start">
@@ -102,7 +117,7 @@ export function AboutSection() {
               className="flex flex-col items-start text-left justify-center"
               data-aos="fade-up"
               data-aos-duration="1500"
-              data-aos-offset="750"
+              data-aos-offset="800"
               data-aos-anchor-placement="top-center"
             >
               <h3 className="text-3xl font-primary font-bold text-[#472D2D] mb-4">

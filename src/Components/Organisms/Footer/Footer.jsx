@@ -1,8 +1,68 @@
+import { useEffect } from 'react';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import Logo from '../../../assets/Logo.svg'; 
 import "./Footer.css"
 
 export function Footer() {
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    const footer = document.querySelector('footer');
+    const elements = document.querySelectorAll('footer [data-aos]');
+
+    if (isMobile) {
+      // Remove do próprio footer
+      if (footer) {
+        footer.removeAttribute('data-aos');
+        footer.removeAttribute('data-aos-delay');
+        footer.removeAttribute('data-aos-duration');
+        footer.removeAttribute('data-aos-offset');
+        footer.removeAttribute('data-aos-anchor-placement');
+      }
+
+      // Remove dos filhos
+      elements.forEach((el) => {
+        el.removeAttribute('data-aos');
+        el.removeAttribute('data-aos-delay');
+        el.removeAttribute('data-aos-duration');
+        el.removeAttribute('data-aos-offset');
+        el.removeAttribute('data-aos-anchor-placement');
+      });
+
+      if (window.AOS && window.AOS.refresh) {
+        window.AOS.refresh();
+      }
+    }
+
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      if (mobile) {
+        if (footer) {
+          footer.removeAttribute('data-aos');
+          footer.removeAttribute('data-aos-delay');
+          footer.removeAttribute('data-aos-duration');
+          footer.removeAttribute('data-aos-offset');
+          footer.removeAttribute('data-aos-anchor-placement');
+        }
+        elements.forEach((el) => {
+          el.removeAttribute('data-aos');
+          el.removeAttribute('data-aos-delay');
+          el.removeAttribute('data-aos-duration');
+          el.removeAttribute('data-aos-offset');
+          el.removeAttribute('data-aos-anchor-placement');
+        });
+        if (window.AOS && window.AOS.refresh) {
+          window.AOS.refresh();
+        }
+      } else {
+        // window.location.reload(); // Descomente se quiser recarregar ao voltar para desktop
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <footer
       className="font-primary"

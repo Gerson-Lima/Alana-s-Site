@@ -1,5 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
@@ -32,8 +32,65 @@ export function ContactSection() {
       );
   };
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    const section = document.getElementById('contact');
+    const elements = document.querySelectorAll('#contact [data-aos]');
+
+    if (isMobile) {
+      
+      if (section) {
+        section.removeAttribute('data-aos');
+        section.removeAttribute('data-aos-delay');
+        section.removeAttribute('data-aos-duration');
+        section.removeAttribute('data-aos-offset');
+        section.removeAttribute('data-aos-anchor-placement');
+      }
+
+      elements.forEach((el) => {
+        el.removeAttribute('data-aos');
+        el.removeAttribute('data-aos-delay');
+        el.removeAttribute('data-aos-duration');
+        el.removeAttribute('data-aos-offset');
+        el.removeAttribute('data-aos-anchor-placement');
+      });
+
+      if (window.AOS && window.AOS.refresh) {
+        window.AOS.refresh();
+      }
+    }
+
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      if (mobile) {
+        if (section) {
+          section.removeAttribute('data-aos');
+          section.removeAttribute('data-aos-delay');
+          section.removeAttribute('data-aos-duration');
+          section.removeAttribute('data-aos-offset');
+          section.removeAttribute('data-aos-anchor-placement');
+        }
+        elements.forEach((el) => {
+          el.removeAttribute('data-aos');
+          el.removeAttribute('data-aos-delay');
+          el.removeAttribute('data-aos-duration');
+          el.removeAttribute('data-aos-offset');
+          el.removeAttribute('data-aos-anchor-placement');
+        });
+        if (window.AOS && window.AOS.refresh) {
+          window.AOS.refresh();
+        }
+      } else {
+        // window.location.reload();
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <section id="contact" className="bg-white py-16 px-6 lg:px-24 font-primary scroll-mt-36">
+    <section id="contact" className="bg-white py-16 px-6 lg:px-24 font-primary scroll-mt-36 overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
 
         {/* LADO ESQUERDO */}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ImageModal } from '../../Molecules/ImageModal/ImageModal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -28,6 +28,64 @@ export function Gallery() {
   const handleCloseModal = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    const section = document.getElementById('projects');
+    const elements = document.querySelectorAll('#projects [data-aos]');
+
+    if (isMobile) {
+      // Remove do próprio section
+      if (section) {
+        section.removeAttribute('data-aos');
+        section.removeAttribute('data-aos-delay');
+        section.removeAttribute('data-aos-duration');
+        section.removeAttribute('data-aos-offset');
+        section.removeAttribute('data-aos-anchor-placement');
+      }
+
+      // Remove dos filhos
+      elements.forEach((el) => {
+        el.removeAttribute('data-aos');
+        el.removeAttribute('data-aos-delay');
+        el.removeAttribute('data-aos-duration');
+        el.removeAttribute('data-aos-offset');
+        el.removeAttribute('data-aos-anchor-placement');
+      });
+
+      if (window.AOS && window.AOS.refresh) {
+        window.AOS.refresh();
+      }
+    }
+
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      if (mobile) {
+        if (section) {
+          section.removeAttribute('data-aos');
+          section.removeAttribute('data-aos-delay');
+          section.removeAttribute('data-aos-duration');
+          section.removeAttribute('data-aos-offset');
+          section.removeAttribute('data-aos-anchor-placement');
+        }
+        elements.forEach((el) => {
+          el.removeAttribute('data-aos');
+          el.removeAttribute('data-aos-delay');
+          el.removeAttribute('data-aos-duration');
+          el.removeAttribute('data-aos-offset');
+          el.removeAttribute('data-aos-anchor-placement');
+        });
+        if (window.AOS && window.AOS.refresh) {
+          window.AOS.refresh();
+        }
+      } else {
+        // window.location.reload(); 
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <section className="md:py-3 sm:py-0 scroll-mt-32" id="projects" data-aos="fade-up" data-aos-delay="200">
