@@ -96,9 +96,9 @@ export function Footer() {
             <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Navegação</h3>
             <ul className="grid grid-cols-1 gap-2">
               <li><a href="#home" className="nav-link font-semibold">Início</a></li>
+              <li><a href="#steps" className="nav-link font-semibold">Como funciona</a></li>
               <li><a href="#projects" className="nav-link font-semibold">Projetos</a></li>
               <li><a href="#about" className="nav-link font-semibold">Sobre mim</a></li>
-              <li><a href="#steps" className="nav-link font-semibold">Como funciona</a></li>
               <li><a href="#contact" className="nav-link font-semibold">Contato</a></li>
             </ul>
           </div>
