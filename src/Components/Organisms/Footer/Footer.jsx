@@ -67,9 +67,9 @@ export function Footer() {
   return (
     <footer
       className="font-primary relative"
-      data-aos="fade-up"
+      data-aos="fade-down"
       data-aos-duration="1500"
-      data-aos-offset="600"
+      data-aos-offset="300"
       data-aos-anchor-placement="top-center"
     >
       {/* TOPO DO FOOTER */}

@@ -8,8 +8,8 @@ import { Toaster } from 'react-hot-toast';
 export default function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1500, // duração das animações em ms
-      offset: 320,
+      duration: 1200, // duração das animações em ms
+      offset: 0,
       easing: 'ease',
       once: true,     // anima apenas uma vez
     });

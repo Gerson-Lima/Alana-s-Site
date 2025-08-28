@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Steps({ icon, title, subtitle }) {
   return (
-  <div className="flex items-center gap-8 md:gap-16 py-2 md:py-4 max-w-xl">
+  <div className="flex items-center justify-end gap-8 md:gap-12 py-2 md:py-4 max-w-xl">
   
   {/* SVG ou ícone */}
   <div className="w-20 h-20 md:w-28 md:h-28 flex items-center justify-center text-gray-300">

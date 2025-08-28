@@ -54,11 +54,11 @@ export function ProcessSteps() {
         <div className="xl:flex">
           <div className="w-[7px] bg-[#E0D7D7] mr-5 md:mr-14 self-stretch" data-aos="fade-up" data-aos-delay="200"></div>
 
-          <div className="flex flex-wrap gap-10 items-center justify-center" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex flex-wrap gap-y-10 gap-x-10 xl:gap-x-16 items-center justify-center" data-aos="fade-up" data-aos-delay="200">
             <Steps
               icon={<Icon1 />}
               title="Reunião de Coleta de Dados"
-              subtitle="Momento que a gente se conhece melhor, e você me conta tudo que espera receber."
+              subtitle="Momento em que nos conhecemos melhor e você me conta tudo o que deseja para o seu projeto"
             />
 
             <Steps

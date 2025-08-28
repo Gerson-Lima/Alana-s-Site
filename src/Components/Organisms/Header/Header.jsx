@@ -6,9 +6,9 @@ import './Header.css';
 
 const navigation = [
   { name: 'Início', href: '#home' },
+  { name: 'Como funciona', href: '#steps' },
   { name: 'Projetos', href: '#projects' },
   { name: 'Sobre mim', href: '#about' },
-  { name: 'Como funciona', href: '#steps' },
   { name: 'Contato', href: '#contact' },
 ];
 
