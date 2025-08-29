@@ -145,4 +145,3 @@ export function IconArrow() {
     </svg>
   );
 }
-
