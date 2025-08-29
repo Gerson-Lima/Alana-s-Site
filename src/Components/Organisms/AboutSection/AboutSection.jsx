@@ -181,7 +181,7 @@ export function AboutSection() {
           >
             Saiba mais{" "}
             <span className="pl-2" style={{ position: "relative", top: "2px" }}>
-              &gt;
+              <IconArrow />
             </span>
           </a>
 
@@ -192,7 +192,6 @@ export function AboutSection() {
               alt="Alana Martins"
               className="max-w-sm w-full"
               data-aos="fade"
-              data-aos-offset="100"
             />
           </div>
         </div>
