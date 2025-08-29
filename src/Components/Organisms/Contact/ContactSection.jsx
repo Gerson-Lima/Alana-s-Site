@@ -98,7 +98,7 @@ export function ContactSection() {
           className="flex flex-col justify-center"
           data-aos="fade-right"
           data-aos-duration="2000"
-          data-aos-offset="945"
+          data-aos-offset="950"
         >
           <div className="max-w-md w-full space-y-6">
             <h2 className="text-4xl font-bold text-[#663535] uppercase">Contato</h2>
@@ -128,7 +128,7 @@ export function ContactSection() {
           className="relative bg-[#F3E7D9] rounded-[4px] p-8 overflow-visible"
           data-aos="fade-left"
           data-aos-duration="2000"
-          data-aos-offset="945"
+          data-aos-offset="950"
         >
           <span className="hidden lg:block absolute -left-7 top-0 h-32 mt-8 w-7 bg-[#663535] rounded-tl-[4px] rounded-bl-[4px]"></span>
           
