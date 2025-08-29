@@ -69,7 +69,7 @@ export function Footer() {
       className="font-primary relative"
       data-aos="fade-down"
       data-aos-duration="1000"
-      data-aos-offset="60"
+      data-aos-offset="210"
     >
       {/* TOPO DO FOOTER */}
       <div className="px-6 py-8 lg:px-24 footer-bg">

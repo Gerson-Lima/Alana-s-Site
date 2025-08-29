@@ -70,7 +70,7 @@ export function FeatureSection() {
         <div
           className="flex flex-col items-center text-center border border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
-          data-aos-offset="210"
+          data-aos-offset="945"
         >
           <IconCustom2 className="h-20 w-20 mb-4" />
           <p className="text-[#F3E7D9] text-2xl font-semibold font-primary">Padrão de excelência</p>
@@ -80,7 +80,7 @@ export function FeatureSection() {
         <div
           className="flex flex-col items-center text-center md:border-y md:border-x-0 sm:border-x sm:boder-y-0 border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
-          data-aos-offset="210"
+          data-aos-offset="945"
         >
           <IconCustom1 className="h-20 w-20 mb-4" />
           <p className="text-[#F3E7D9] text-2xl font-semibold font-primary">Design sofisticado</p>
@@ -90,7 +90,7 @@ export function FeatureSection() {
         <div
           className="flex flex-col items-center text-center border border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
-          data-aos-offset="210"
+          data-aos-offset="945"
         >
           <IconCustom3 className="h-20 w-20 mb-4" />
           <p className="text-[#F3E7D9] text-2xl font-semibold font-primary">Praticidade e Inovação</p>
