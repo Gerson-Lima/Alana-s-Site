@@ -55,7 +55,6 @@ export function AboutSection() {
             className="w-[3px] bg-[#202020] mr-14 self-stretch my-16"
             data-aos="fade-up"
             data-aos-offset="310"
-            data-aos-anchor-placement="top-center"
           ></div>
 
           {/* Grid 3 colunas */}
@@ -66,7 +65,6 @@ export function AboutSection() {
               className="flex flex-col items-start justify-center"
               data-aos="fade-up"
               data-aos-offset="310"
-              data-aos-anchor-placement="top-center"
             >
               <a className="mb-4 self-start">
                 <img
@@ -104,8 +102,7 @@ export function AboutSection() {
                 alt="Alana Martins"
                 className="max-w-sm w-full"
                 data-aos="fade"
-                data-aos-offset="310"
-                data-aos-anchor-placement="top-center"
+                data-aos-offset="310" 
               />
             </div>
 
@@ -114,7 +111,6 @@ export function AboutSection() {
               className="flex flex-col items-start text-left justify-center"
               data-aos="fade-up"
               data-aos-offset="310"
-              data-aos-anchor-placement="top-center"
             >
               <h3 className="text-3xl font-primary font-bold text-[#472D2D] mb-4">
                 SOBRE A ARQUITETA
@@ -133,7 +129,6 @@ export function AboutSection() {
             className="hidden lg:block w-[3px] bg-[#202020] mr-14 self-stretch my-16"
             data-aos="fade-up"
             data-aos-offset="310"
-            data-aos-anchor-placement="top-center"
           ></div>
 
           {/* Logo */}
@@ -144,7 +139,6 @@ export function AboutSection() {
               className="h-20 w-auto"
               data-aos="fade-up"
               data-aos-offset="310"
-              data-aos-anchor-placement="top-center"
               style={{
                 imageRendering: '-webkit-optimize-contrast',
                 transform: 'translateZ(0)',
@@ -157,7 +151,6 @@ export function AboutSection() {
             className="text-2xl font-primary font-semibold text-[#472D2D] leading-normal text-center"
             data-aos="fade-up"
             data-aos-offset="300"
-            data-aos-anchor-placement="top-center"
           >
             ARQUITETURA,<br />
             INTERIORES &<br />
@@ -169,7 +162,6 @@ export function AboutSection() {
             className="text-center max-w-lg"
             data-aos="fade-up"
             data-aos-offset="310"
-            data-aos-anchor-placement="top-center"
           >
             <h3 className="text-2xl font-primary font-bold text-[#472D2D] mb-4">
               SOBRE A ARQUITETA
@@ -185,7 +177,6 @@ export function AboutSection() {
             className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
             data-aos="zoom-out-up"
             data-aos-offset="310"
-            data-aos-anchor-placement="top-center"
           >
             Saiba mais{" "}
             <span className="pl-2" style={{ position: "relative", top: "2px" }}>
@@ -201,7 +192,6 @@ export function AboutSection() {
               className="max-w-sm w-full"
               data-aos="fade"
               data-aos-offset="310"
-              data-aos-anchor-placement="top-center"
             />
           </div>
         </div>
