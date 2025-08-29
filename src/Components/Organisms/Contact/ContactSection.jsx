@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { IconArrow } from "../../Atoms/Icons/Icons";
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
@@ -213,7 +214,7 @@ export function ContactSection() {
                   <>
                     Enviar
                     <span className="pl-2" style={{ position: "relative", top: "2.5px" }}>
-                      &gt;
+                      <IconArrow />
                     </span>
                   </>
                 )}

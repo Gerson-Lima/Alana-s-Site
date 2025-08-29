@@ -129,3 +129,20 @@ export function IconCustom3() {
     </svg>
   );
 }
+
+export function IconArrow() {
+  return (
+    <svg
+      width="28 "
+      height="24"
+      viewBox="0 0 34 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M29 12H5" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M24 17L29 12" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M24 7L29 12" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+

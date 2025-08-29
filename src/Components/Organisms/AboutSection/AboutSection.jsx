@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Logo from '../../../assets/Logo.svg';
+import { IconArrow } from "../../Atoms/Icons/Icons";
 import './AboutSection.css'
 
 export function AboutSection() {
@@ -86,11 +87,11 @@ export function AboutSection() {
 
               <a
                 href="#contact"
-                className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
+                className="inline-flex px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
               >
                 Saiba mais{" "}
                 <span className="pl-2" style={{ position: "relative", top: "2px" }}>
-                  &gt;
+                  <IconArrow />
                 </span>
               </a>
             </div>

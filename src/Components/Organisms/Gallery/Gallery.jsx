@@ -89,7 +89,7 @@ export function Gallery() {
     <section className="md:py-3 sm:py-0" id="projects" data-aos="fade-up" data-aos-delay="200">
       
       {/* DESKTOP GRID */}
-      <div className="hidden md:grid grid-cols-7 grid-rows-1 gap-4 px-4 max-h-[600px] xl:max-h-[1200px] overflow-hidden">
+      <div className="hidden md:grid grid-cols-7 grid-rows-1 px-3  gap-3 max-h-[600px] 2xl:max-h-[800px] overflow-hidden">
         <button
           type="button"
           className="col-span-1 row-span-2 focus:outline-none"
@@ -98,7 +98,7 @@ export function Gallery() {
           <img
             src={images[0]}
             alt="Imagem 1"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover object-[22%_center] w-full h-full shadow-md hover:opacity-80 transition"
           />
         </button>
         <button
@@ -120,7 +120,7 @@ export function Gallery() {
           <img
             src={images[2]}
             alt="Imagem 3"
-            className="object-cover w-full h-full shadow-md hover:opacity-80 transition"
+            className="object-cover object-[66%_center] w-full h-full shadow-md hover:opacity-80 transition"
           />
         </button>
         <button

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import imgHero from "../../../assets/img-hero.webp";
+import { IconArrow } from "../../Atoms/Icons/Icons";
 import "./Hero.css";
 
 export function Hero() {
@@ -71,7 +72,7 @@ export function Hero() {
           </p>
           <a
             href="#contact"
-            className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
+            className="inline-flex px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
             {...(!isMobile && {
               'data-aos': 'zoom-out-up',
               'data-aos-duration': '1400'
@@ -82,7 +83,7 @@ export function Hero() {
               className="pl-2"
               style={{ position: "relative", top: "2px" }}
             >
-              &gt;
+              <IconArrow />
             </span>
           </a>
         </div>
