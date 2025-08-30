@@ -213,7 +213,7 @@ export function ContactSection() {
                 ) : (
                   <>
                     Enviar
-                    <span className="pl-2" style={{ position: "relative", top: "2.5px" }}>
+                    <span className="pl-2" style={{ position: "relative", top: "2px" }}>
                       <IconArrow />
                     </span>
                   </>

@@ -180,7 +180,7 @@ export function AboutSection() {
             data-aos-offset="950"
           >
             Saiba mais{" "}
-            <span className="pl-2" style={{ position: "relative", top: "2px" }}>
+            <span className="pl-2" style={{ position: "relative", top: "1.8px" }}>
               <IconArrow />
             </span>
           </a>
