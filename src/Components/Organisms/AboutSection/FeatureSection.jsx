@@ -63,7 +63,7 @@ export function FeatureSection() {
   }, []);
 
   return (
-    <section className="p-6 sm:p-7 lg:p-10 feature-bg">
+    <section className="p-6 sm:p-4 2sm:p-10 feature-bg">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-0">
         
         {/* Item 1 */}
