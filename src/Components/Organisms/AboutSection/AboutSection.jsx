@@ -192,7 +192,8 @@ export function AboutSection() {
               alt="Alana Martins"
               className="max-w-sm w-full"
               data-aos="fade"
-              data-aos-offset="60"
+              data-aos-offset="10"
+              data-aos-duration="100"
             />
           </div>
         </div>
