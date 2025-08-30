@@ -10,7 +10,7 @@ export default function Steps({ icon, title, subtitle }) {
 
   {/* Texto */}
   <div className="flex flex-col leading-[5%] md:leading-[3%] w-2/3">
-    <h2 className="text-xl md:text-3xl font-semibold text-[#663535] mb-1 md:mb-2">{title}</h2>
+    <h2 className="text-xl md:text-[1.874rem] font-semibold text-[#663535] mb-1 md:mb-2">{title}</h2>
     <p className="text-lg md:text-2xl font-normal text-[#663535]">{subtitle}</p>
   </div>
 </div>
