@@ -46,7 +46,7 @@ export function Hero() {
             <span className="text-[#202020] uppercase">
               Transformando sonhos
             </span>
-            <span className="text-secondary uppercase text-right xl:ml-52 mt-2">
+            <span className="text-secondary uppercase sm:text-left 1sm:text-right xl:ml-52 mt-2">
               em espaços únicos
             </span>
           </h1>
