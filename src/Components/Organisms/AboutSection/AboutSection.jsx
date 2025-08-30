@@ -191,6 +191,8 @@ export function AboutSection() {
               src="/about-me.webp"
               alt="Alana Martins"
               className="max-w-sm w-full"
+              data-aos="fade"
+              data-aos-offset="60"
             />
           </div>
         </div>
