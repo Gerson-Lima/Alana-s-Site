@@ -137,7 +137,7 @@ export function AboutSection() {
             <img
               alt="Logo"
               src={Logo}
-              className="h-20 w-auto"
+              className="h-20 sm:h-16 w-auto"
               data-aos="fade-up"
               data-aos-offset="950"
               style={{
@@ -149,7 +149,7 @@ export function AboutSection() {
 
           {/* Título */}
           <h2
-            className="text-2xl font-primary font-semibold text-[#472D2D] leading-normal text-center"
+            className="text-2xl sm:text-[23px] font-primary font-semibold text-[#472D2D] leading-normal text-center"
             data-aos="fade-up"
             data-aos-offset="300"
           >
@@ -164,7 +164,7 @@ export function AboutSection() {
             data-aos="fade-up"
             data-aos-offset="950"
           >
-            <h3 className="text-2xl font-primary font-bold text-[#472D2D] mb-4">
+            <h3 className="text-2xl sm:text-[23px] font-primary font-bold text-[#472D2D] mb-4">
               SOBRE A ARQUITETA
             </h3>
             <p className="text-[#472D2D] text-xl leading-relaxed mb-6">
@@ -175,7 +175,7 @@ export function AboutSection() {
           {/* Botão */}
           <a
             href="#contact"
-            className="inline-block px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
+            className="inline-flex px-6 py-3 bg-secondary text-white font-semibold font-primary rounded-[2px] hover:bg-[#8E5858] transition"
             data-aos="zoom-out-up"
             data-aos-offset="950"
           >
@@ -190,7 +190,7 @@ export function AboutSection() {
             <img
               src="/about-me.webp"
               alt="Alana Martins"
-              className="max-w-sm w-full"
+              className="max-w-sm w-56"
             />
           </div>
         </div>

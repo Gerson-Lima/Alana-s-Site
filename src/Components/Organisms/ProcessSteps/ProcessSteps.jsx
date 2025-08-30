@@ -47,7 +47,7 @@ export function ProcessSteps() {
   return (
     <section className="py-12 bg-white scroll-mt-28 overflow-x-hidden" id="steps">
       <div className="max-w-7xl mx-auto space-y-7 p-6 xl:px-0 sm:px-11">
-        <h1 className="text-4xl font-primary font-extrabold mb-10 text-[#663535]" data-aos="fade-up" data-aos-delay="200">
+        <h1 className="text-4xl sm:text-[23px] font-primary font-extrabold mb-10 text-[#663535]" data-aos="fade-up" data-aos-delay="200">
           ETAPAS DO PROCESSO
         </h1>
 

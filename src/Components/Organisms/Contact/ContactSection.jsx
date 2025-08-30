@@ -102,8 +102,8 @@ export function ContactSection() {
           data-aos-offset="950"
         >
           <div className="max-w-md w-full space-y-6">
-            <h2 className="text-4xl font-bold text-[#663535] uppercase">Contato</h2>
-            <p className="text-3xl font-medium text-[#202020]">
+            <h2 className="text-4xl sm:text-[23px] font-bold text-[#663535] uppercase">Contato</h2>
+            <p className="text-3xl sm:text-xl font-medium text-[#202020]">
               Transforme seu espaço com a gente! Entre em contato e faça seu projeto ganhar vida.
             </p>
 

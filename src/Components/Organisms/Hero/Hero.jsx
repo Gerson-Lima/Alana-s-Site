@@ -37,7 +37,7 @@ export function Hero() {
       <div className="mx-auto flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8 w-full max-w-7xl px-0 sm:px-7 xl:px-0">
         <div className="text-left max-w-xl pb-16">
           <h1
-            className="lg:text-4xl sm:text-[18px] md:text-[40px] 2sm:text-[34px] font-primary font-extrabold text-gray-800 mb-3 flex flex-col"
+            className="lg:text-4xl sm:text-[23px] md:text-[40px] 2sm:text-[34px] font-primary font-extrabold text-gray-800 mb-3 flex flex-col"
             {...(!isMobile && {
               'data-aos': 'fade-up',
               'data-aos-duration': '1000'
@@ -60,7 +60,7 @@ export function Hero() {
           ></div>
 
           <p
-            className="xl:text-[24px] sm:text-[16px] text-[#202020] font-primary mb-6 mt-2 leading-tight"
+            className="xl:text-[24px] sm:text-xl text-[#202020] font-primary mb-6 mt-2 leading-tight"
             {...(!isMobile && {
               'data-aos': 'fade-up',
               'data-aos-duration': '1300'

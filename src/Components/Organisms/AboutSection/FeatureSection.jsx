@@ -63,12 +63,12 @@ export function FeatureSection() {
   }, []);
 
   return (
-    <section className="p-6 sm:p-10 lg:p-14 feature-bg">
+    <section className="p-6 sm:p-7 lg:p-10 feature-bg">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-0">
         
         {/* Item 1 */}
         <div
-          className="flex flex-col items-center text-center border border-[#F3E7D9] p-20 gap-5"
+          className="flex md:flex-col sm:flex-row items-center md:text-center sm:text-left border border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
           data-aos-offset="950"
         >
@@ -78,7 +78,7 @@ export function FeatureSection() {
 
         {/* Item 2 */}
         <div
-          className="flex flex-col items-center text-center md:border-y md:border-x-0 sm:border-x sm:boder-y-0 border-[#F3E7D9] p-20 gap-5"
+          className="flex md:flex-col sm:flex-row items-center md:text-center sm:text-left md:border-y md:border-x-0 sm:border-x sm:boder-y-0 border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
           data-aos-offset="950"
         >
@@ -88,7 +88,7 @@ export function FeatureSection() {
 
         {/* Item 3 */}
         <div
-          className="flex flex-col items-center text-center border border-[#F3E7D9] p-20 gap-5"
+          className="flex md:flex-col sm:flex-row items-center md:text-center sm:text-left border border-[#F3E7D9] p-20 gap-5"
           data-aos="fade-up"
           data-aos-offset="950"
         >
