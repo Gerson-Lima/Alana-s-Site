@@ -46,7 +46,7 @@ export function AboutSection() {
   }, []);
 
   return (
-    <section className="about-bg scroll-mt-28" id="about">
+    <section className="about-bg scroll-mt-32" id="about">
       <div className="max-w-7xl mx-auto px-6 xl:px-0 sm:mt-16 md:mt-1">
 
         <div className="hidden lg:flex flex-row items-center gap-6">
@@ -191,9 +191,6 @@ export function AboutSection() {
               src="/about-me.webp"
               alt="Alana Martins"
               className="max-w-sm w-full"
-              data-aos="fade"
-              data-aos-offset="10"
-              data-aos-duration="100"
             />
           </div>
         </div>
