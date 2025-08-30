@@ -149,7 +149,7 @@ export function AboutSection() {
 
           {/* Título */}
           <h2
-            className="text-2xl sm:text-[23px] font-primary font-semibold text-[#472D2D] leading-normal text-center"
+            className="text-2xl sm:text-[22px] font-primary font-semibold text-[#472D2D] leading-normal text-center"
             data-aos="fade-up"
             data-aos-offset="300"
           >
@@ -164,7 +164,7 @@ export function AboutSection() {
             data-aos="fade-up"
             data-aos-offset="950"
           >
-            <h3 className="text-2xl sm:text-[23px] font-primary font-bold text-[#472D2D] mb-4">
+            <h3 className="text-2xl sm:text-[22px] font-primary font-bold text-[#472D2D] mb-4">
               SOBRE A ARQUITETA
             </h3>
             <p className="text-[#472D2D] text-xl leading-relaxed mb-6">
