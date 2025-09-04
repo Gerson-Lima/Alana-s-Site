@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { WhatsAppButton } from './Components/Molecules/WhatsAppBtn/WhatsAppBtn';
 import { Home } from './pages/Home';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function App() {
       duration: 1200, // duração das animações em ms
       offset: 0,
       easing: 'ease',
-      once: true,     // anima apenas uma vez
+      once: true,     // anima apenas uma vez, sem precisar animar indo e voltando, normalmente o AOS é bugado nisso 
     });
   }, []);
 
@@ -48,6 +49,7 @@ export default function App() {
           },
         }}
       />
+      <Analytics /> 
     </div>
   );
 }
