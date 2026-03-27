@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './App.css';
+import { Loading } from './Components/Loading/Loading';
 import { WhatsAppButton } from './Components/Molecules/WhatsAppBtn/WhatsAppBtn';
 import { Home } from './pages/Home';
 import { Toaster } from 'react-hot-toast';
@@ -12,12 +14,15 @@ export default function App() {
       duration: 1200, // duração das animações em ms
       offset: 0,
       easing: 'ease',
-      once: true,     // anima apenas uma vez, sem precisar animar indo e voltando, normalmente o AOS é bugado nisso 
+      once: true,     // anima apenas uma vez, sem precisar animar indo e voltando, normalmente o AOS é bugado nisso
+      throttleDelay: 99, // detecta scroll events mais frequentemente
+      disableMutationObserver: false, // monitora mudanças no DOM
     });
   }, []);
 
   return (
     <div>
+      <Loading />
       <Home />
       <WhatsAppButton />
       <Toaster

@@ -1,0 +1,13 @@
+/* Animação suave de entrada do site sincronizada com o loading */
+#root > div {
+  animation: fadeInSuave 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s forwards;
+}
+
+@keyframes fadeInSuave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
