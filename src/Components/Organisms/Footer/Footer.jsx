@@ -158,7 +158,7 @@ export function Footer() {
 
       {/* BARRA INFERIOR */}
       <div className="bg-[#663535] font-secondary text-white text-center text-sm py-4">
-        Alana Martins Arquitetura © 2025. Todos os direitos reservados.
+        Alana Martins Arquitetura © {new Date().getFullYear()}. Todos os direitos reservados.
       </div>
     </footer>
   );
