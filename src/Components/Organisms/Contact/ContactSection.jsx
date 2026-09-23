@@ -110,15 +110,15 @@ export function ContactSection() {
             <div className="flex flex-col space-y-5 text-[#202020] text-xl">
               <div className="flex items-center space-x-3">
                 <EnvelopeIcon className="h-6 w-6 text-[#663535] shrink-0" />
-                <span className="break-words min-w-0">alanamartinsarquitetura@gmail.com</span>
+                <a href="mailto:alanamartinsarquitetura@gmail.com" className="contact-link break-words min-w-0">alanamartinsarquitetura@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3">
                 <PhoneIcon className="h-6 w-6 text-[#663535]" />
-                <span>+55 (83) 99821-9493</span>
+                <a href="tel:+5583998219493" className="contact-link">+55 (83) 99821-9493</a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPinIcon className="h-6 w-6 text-[#663535]" />
-                <span>Todo território nacional.</span>
+                <a href="#location" className="contact-link">Catolé do Rocha, PB</a>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@ export function ContactSection() {
               </button>
             </div>
           </form>
-          
+
         </div>
       </div>
     </section>
