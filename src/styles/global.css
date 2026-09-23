@@ -27,5 +27,35 @@ html {
     }
 }
 
+.contact-link {
+    position: relative;
+    display: inline-block;
+    color: #663535;
+    padding-bottom: 2px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #663535;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #663535;
+}
+
+.contact-link:hover::after {
+    transform: scaleX(1);
+}
+
 
   

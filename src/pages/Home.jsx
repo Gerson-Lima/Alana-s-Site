@@ -3,6 +3,7 @@ import { Hero } from '../Components/Organisms/Hero/Hero'
 import { ProcessSteps } from '../Components/Organisms/ProcessSteps/ProcessSteps'
 import { Gallery } from '../Components/Organisms/Gallery/Gallery'
 import { ContactSection } from '../Components/Organisms/Contact/ContactSection'
+import { LocationSection } from '../Components/Organisms/Location/LocationSection'
 import { Footer } from '../Components/Organisms/Footer/Footer'
 import { AboutSection } from '../Components/Organisms/AboutSection/AboutSection'
 import { FeatureSection } from '../Components/Organisms/AboutSection/FeatureSection'
@@ -19,6 +20,7 @@ export function Home() {
         < Gallery />
         < AboutSection />
         < FeatureSection />
+        < LocationSection />
         < ContactSection />
         < Footer />
         

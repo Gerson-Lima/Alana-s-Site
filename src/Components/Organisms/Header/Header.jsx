@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Como funciona', href: '#steps' },
   { name: 'Projetos', href: '#projects' },
   { name: 'Sobre mim', href: '#about' },
+  { name: 'Localização', href: '#location' },
   { name: 'Contato', href: '#contact' },
 ];
 
@@ -46,7 +47,7 @@ export function Header() {
             <img
               alt="Logo"
               src={Logo}
-              className="xl:h-[4.5rem] sm:h-12 w-auto"
+              className="h-12 xl:h-[4.5rem] w-auto"
               style={{
                 imageRendering: '-webkit-optimize-contrast',
                 transform: 'translateZ(0)',
@@ -114,7 +115,7 @@ export function Header() {
                   <img
                     alt="Logo"
                     src={Logo}
-                    className="xl:h-[4.5rem] sm:h-12 w-auto"
+                    className="h-12 xl:h-[4.5rem] w-auto"
                   />
                 </a>
                 <button

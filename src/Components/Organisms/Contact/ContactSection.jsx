@@ -96,29 +96,29 @@ export function ContactSection() {
 
         {/* LADO ESQUERDO */}
         <div
-          className="flex flex-col justify-center"
+          className="flex flex-col justify-center min-w-0"
           data-aos="fade-right"
           data-aos-duration="2000"
           data-aos-offset="100"
         >
           <div className="max-w-md w-full space-y-6">
-            <h2 className="lg:text-4xl sm:text-[22px] font-bold text-[#663535] uppercase">Contato</h2>
+            <h2 className="text-[22px] lg:text-4xl sm:text-[22px] font-bold text-[#663535] uppercase">Contato</h2>
             <p className="text-3xl sm:text-xl font-medium text-[#202020]">
               Transforme seu espaço com a gente! Entre em contato e faça seu projeto ganhar vida.
             </p>
 
             <div className="flex flex-col space-y-5 text-[#202020] text-xl">
               <div className="flex items-center space-x-3">
-                <EnvelopeIcon className="h-6 w-6 text-[#663535]" />
-                <span>alanamartinsarquitetura@gmail.com</span>
+                <EnvelopeIcon className="h-6 w-6 text-[#663535] shrink-0" />
+                <a href="mailto:alanamartinsarquitetura@gmail.com" className="contact-link break-words min-w-0">alanamartinsarquitetura@gmail.com</a>
               </div>
               <div className="flex items-center space-x-3">
                 <PhoneIcon className="h-6 w-6 text-[#663535]" />
-                <span>+55 (83) 99821-9493</span>
+                <a href="tel:+5583998219493" className="contact-link">+55 (83) 99821-9493</a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPinIcon className="h-6 w-6 text-[#663535]" />
-                <span>Todo território nacional.</span>
+                <a href="#location" className="contact-link">Catolé do Rocha, PB</a>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export function ContactSection() {
 
         {/* LADO DIREITO - FORMULÁRIO */}
         <div
-          className="relative bg-[#F3E7D9] rounded-[4px] p-8 overflow-visible"
+          className="relative bg-[#F3E7D9] rounded-[4px] p-8 overflow-visible min-w-0"
           data-aos="fade-left"
           data-aos-duration="2000"
           data-aos-offset="100"
@@ -221,7 +221,7 @@ export function ContactSection() {
               </button>
             </div>
           </form>
-          
+
         </div>
       </div>
     </section>
