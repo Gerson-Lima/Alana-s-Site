@@ -99,18 +99,18 @@ export function LocationSection() {
           aria-hidden="true"
         ></div>
 
-        <div className="absolute left-4 right-4 bottom-2 md:left-2 md:right-auto md:max-w-sm bg-[#663535] text-white rounded-[4px] shadow-lg p-4 md:p-6 text-center md:text-left">
-          <h3 className="font-bold uppercase text-base md:text-lg mb-1 md:mb-2">Venha nos conhecer</h3>
-          <p className="text-[#F3E7D9] text-xs md:text-base leading-snug md:leading-relaxed">
+        <div className="hidden md:block absolute left-2 bottom-2 max-w-sm bg-[#663535] text-white rounded-[4px] shadow-lg p-6">
+          <h3 className="font-bold uppercase text-lg mb-2">Venha nos conhecer</h3>
+          <p className="text-[#F3E7D9] text-base leading-relaxed">
             Visite nosso escritório em Catolé do Rocha - PB, ou nos acompanhe de perto pelo instagram.
           </p>
           <a
             href="https://www.instagram.com/alanamartinsarquiteta/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center md:justify-start gap-2 mt-2 md:mt-4 text-xs md:text-sm font-semibold hover:text-[#F3E7D9] transition-colors"
+            className="flex items-center gap-2 mt-4 text-sm font-semibold hover:text-[#F3E7D9] transition-colors"
           >
-            <FaInstagram className="w-4 h-4 md:w-[18px] md:h-[18px]" />
+            <FaInstagram className="w-[18px] h-[18px]" />
             @alanamartinsarquiteta
           </a>
         </div>
