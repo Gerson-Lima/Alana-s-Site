@@ -58,7 +58,7 @@ export function LocationSection() {
   }, []);
 
   return (
-    <section id="location" className="bg-[#F3E7D9] pt-16 font-primary scroll-mt-28 overflow-x-hidden">
+    <section id="location" className="bg-[#F3E7D9] pt-16 font-primary scroll-mt-16 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-24">
         <div
           className="text-center mb-8"
@@ -94,8 +94,8 @@ export function LocationSection() {
         ></iframe>
 
         <div
-          className="absolute top-0 left-0 right-0 h-16 pointer-events-none"
-          style={{ background: 'linear-gradient(to bottom, #F3E7D9 -70%, rgba(243,231,217,0) 100%)' }}
+          className="absolute top-0 left-0 right-0 h-8 pointer-events-none"
+          style={{ background: 'linear-gradient(to bottom, #F3E7D9 0%, rgba(243,231,217,0) 100%)' }}
           aria-hidden="true"
         ></div>
 
