@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { FiChevronUp } from 'react-icons/fi';
-import Logo from '../../../assets/Logo.svg'; 
+import Logo from '../../../assets/Logo.svg';
+import { WHATSAPP_URL } from '../../../utils/whatsapp';
 import "./Footer.css"
 
 export function Footer() {
@@ -130,7 +131,7 @@ export function Footer() {
               <h3 className="text-[#202020] text-xl font-extrabold mb-3 uppercase">Redes Sociais</h3>
               
                <div className="flex justify-center lg:justify-start space-x-4">
-                <a href="https://wa.me/5583998219493" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
+                <a href={WHATSAPP_URL} className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">
                   <FaWhatsapp size={24} />
                 </a>
                 <a href="https://www.instagram.com/alanamartinsarquiteta/" className="social-icon text-[#663535] hover:text-[#4d2727] transition-colors">

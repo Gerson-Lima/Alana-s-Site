@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { WHATSAPP_URL } from '../../../utils/whatsapp';
 
 const PERIOD_MS = 15000;   // intervalo entre tremidas
 const SHAKE_MS  = 900;     // duração da tremida
@@ -55,7 +56,7 @@ export function WhatsAppButton() {
       `}</style>
 
       <a
-        href="https://wa.me/5583998219493"
+        href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
         className={[
