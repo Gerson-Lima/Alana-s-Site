@@ -85,7 +85,7 @@ export function LocationSection() {
           className="w-full h-[420px] sm:h-[460px] lg:h-[540px] block"
           style={{
             border: 0,
-            filter: 'grayscale(1) sepia(3.5) hue-rotate(308deg) saturate(1.3) brightness(0.87) contrast(1.2)',
+            // filter: 'grayscale(1) sepia(3.5) hue-rotate(308deg) saturate(1.3) brightness(0.87) contrast(1.2)',
           }}
           allowFullScreen=""
           loading="lazy"
