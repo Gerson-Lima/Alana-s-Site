@@ -81,27 +81,30 @@ export function LocationSection() {
         data-aos-delay="150"
       >
         <iframe
-          src="https://maps.google.com/maps?q=Alana+Martins+Arquitetura&z=18&output=embed"
+          src="https://maps.google.com/maps?q=Alana+Martins+Arquitetura&z=17&output=embed"
           className="w-full h-[420px] sm:h-[460px] lg:h-[540px] block"
-          style={{ border: 0 }}
+          style={{
+            border: 0,
+            filter: 'grayscale(1) sepia(2.9) hue-rotate(308deg) saturate(0.8) brightness(0.9) contrast(1.2)',
+          }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Localização do escritório - Alana Martins Arquitetura"
         ></iframe>
 
-        <div className="absolute left-0 right-0 bottom-0 sm:right-auto sm:max-w-sm bg-[#663535] text-white rounded-tr-[4px] shadow-lg p-6">
-          <h3 className="font-bold uppercase text-lg mb-2">Venha nos conhecer</h3>
-          <p className="text-[#F3E7D9] text-sm leading-relaxed">
-            Visite nosso escritório em Catolé do Rocha, PB, ou acompanhe nossos projetos por perto.
+        <div className="absolute left-2 right-0 bottom-2 sm:right-auto sm:max-w-sm bg-[#663535] text-white rounded-[4px] shadow-lg p-4 md:p-6">
+          <h3 className="font-bold uppercase text-base md:text-lg mb-1 md:mb-2">Venha nos conhecer</h3>
+          <p className="text-[#F3E7D9] text-xs md:text-base leading-snug md:leading-relaxed">
+            Visite nosso escritório em Catolé do Rocha - PB, ou acompanhe nossos projetos por perto.
           </p>
           <a
             href="https://www.instagram.com/alanamartinsarquiteta/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 mt-4 text-sm font-semibold hover:text-[#F3E7D9] transition-colors"
+            className="flex items-center gap-2 mt-2 md:mt-4 text-xs md:text-sm font-semibold hover:text-[#F3E7D9] transition-colors"
           >
-            <FaInstagram size={18} />
+            <FaInstagram className="w-4 h-4 md:w-[18px] md:h-[18px]" />
             @alanamartinsarquiteta
           </a>
         </div>
