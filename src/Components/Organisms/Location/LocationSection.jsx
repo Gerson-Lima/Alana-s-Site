@@ -69,7 +69,7 @@ export function LocationSection() {
             Catolé do Rocha, Paraíba
           </h2>
           <p className="text-lg sm:text-xl text-[#472D2D] mt-2">
-            Localizado na R. Floriano Peixoto, Catolé do Rocha - PB, 58884-000
+            Rua Floriano Peixoto, n<sup className="text-[0.65em]">o</sup> 222 - Sala 203 - 2<sup className="text-[0.65em]">o</sup> andar. Catolé do Rocha - PB, 58884-000
           </p>
         </div>
       </div>
@@ -102,7 +102,7 @@ export function LocationSection() {
         <div className="absolute left-4 right-4 bottom-2 md:left-2 md:right-auto md:max-w-sm bg-[#663535] text-white rounded-[4px] shadow-lg p-4 md:p-6 text-center md:text-left">
           <h3 className="font-bold uppercase text-base md:text-lg mb-1 md:mb-2">Venha nos conhecer</h3>
           <p className="text-[#F3E7D9] text-xs md:text-base leading-snug md:leading-relaxed">
-            Visite nosso escritório em Catolé do Rocha - PB, ou acompanhe nossos projetos por perto.
+            Visite nosso escritório em Catolé do Rocha - PB, ou nos acompanhe de perto pelo instagram.
           </p>
           <a
             href="https://www.instagram.com/alanamartinsarquiteta/"
