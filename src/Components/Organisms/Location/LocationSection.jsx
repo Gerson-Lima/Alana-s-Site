@@ -85,13 +85,19 @@ export function LocationSection() {
           className="w-full h-[420px] sm:h-[460px] lg:h-[540px] block"
           style={{
             border: 0,
-            filter: 'grayscale(1) sepia(2.9) hue-rotate(308deg) saturate(0.8) brightness(0.9) contrast(1.2)',
+            filter: 'grayscale(1) sepia(3.5) hue-rotate(308deg) saturate(1.3) brightness(0.87) contrast(1.2)',
           }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Localização do escritório - Alana Martins Arquitetura"
         ></iframe>
+
+        <div
+          className="absolute top-0 left-0 right-0 h-16 pointer-events-none"
+          style={{ background: 'linear-gradient(to bottom, #F3E7D9 -70%, rgba(243,231,217,0) 100%)' }}
+          aria-hidden="true"
+        ></div>
 
         <div className="absolute left-2 right-0 bottom-2 sm:right-auto sm:max-w-sm bg-[#663535] text-white rounded-[4px] shadow-lg p-4 md:p-6">
           <h3 className="font-bold uppercase text-base md:text-lg mb-1 md:mb-2">Venha nos conhecer</h3>
