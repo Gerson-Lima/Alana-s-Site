@@ -69,7 +69,7 @@ export function LocationSection() {
             Catolé do Rocha, Paraíba
           </h2>
           <p className="text-lg sm:text-xl text-[#472D2D] mt-2">
-            Rua Floriano Peixoto, n<sup className="text-[0.65em]">o</sup> 222 - Sala 203 - 2<sup className="text-[0.65em]">o</sup> andar. Catolé do Rocha - PB, 58884-000
+            Empresarial Zé Costa - R. Floriano Peixoto, n<sup className="text-[0.65em]">o</sup>222 - Sl 203 - 2<sup className="text-[0.65em]">o</sup> andar - Centro, Catolé do Rocha - PB, 58884-000
           </p>
         </div>
       </div>
