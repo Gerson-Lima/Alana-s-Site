@@ -159,7 +159,18 @@ export function Footer() {
 
       {/* BARRA INFERIOR */}
       <div className="bg-[#663535] font-secondary text-white text-center text-sm py-4">
-        Alana Martins Arquitetura © {new Date().getFullYear()}. Todos os direitos reservados.
+        <p>Alana Martins Arquitetura © {new Date().getFullYear()}. Todos os direitos reservados.</p>
+        <p className="mt-1 text-xs opacity-80">
+          Feito por:{' '}
+          <a
+            href="https://www.gersondlima.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-100 transition-opacity"
+          >
+            Gerson Lima
+          </a>
+        </p>
       </div>
     </footer>
   );
